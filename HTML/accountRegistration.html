@@ -50,7 +50,45 @@
 
 		<!-- content_section -->
 		<section class="span10 content_section">
-			<h1>Main Content Area</h1>
+			<h1>Account Information</h1>
+
+			<!-- Tabs -->
+			<ul class="nav nav-tabs">
+			  <li class="active"><a href="#userInfo" data-toggle="tab">User Info</a></li>
+			  <li><a href="#agencyInfo" data-toggle="tab">Agency Info</a></li>
+			</ul>
+ 
+			<div id="" class="tab-content">
+			  <div class="tab-pane active" id="userInfo">
+			  	<h2>User Info</h2>
+			  	<small><i class="icon-asterisk"></i> All Fields in this form should be properly filled with right information</small>
+			  	<hr>
+			  	<form>
+			  		<label>Your full name</label>
+			  		<input type="text" class="input span9" placeholder="Your Full Name">
+			  		<label>Designation in current Company</label>
+			  		<input type="text" class="input span9" placeholder="EX: Account Manager, Marketing Assistant etc...">
+			  		<label>Your Email Addres</label>
+			  		<input type="text" class="input span6" placeholder="Email"> <span class="help-inline">This will be your User ID</span>
+			  		<label>Choose Password</label>
+  					<input type="password" class="input span6" placeholder="Password">
+  					<label>Re-enter Password</label>
+  					<input type="password" class="input span6" placeholder="Re-Enter Password">
+  					<span class="span6"><span class="label label-info">Info</span> A confirmation email will be sent on submit</span>
+  					<hr>
+  					<fieldset>
+  						<button class="btn btn-primary" type="submit">Submit & Continue</button>
+  						<button class="btn" type="reset">Reset!</button>
+  					</fieldset>
+			  	</form>
+			  </div>
+			  <div class="tab-pane" id="agencyInfo">
+			  	<h2>Agency Info</h2>
+			  </div>
+			  <div class="tab-pane" id="messages">...</div>
+			  <div class="tab-pane" id="settings">...</div>
+			</div>
+
 		</section>
 	</div>
 </div>
