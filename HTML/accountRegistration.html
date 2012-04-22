@@ -21,16 +21,21 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
+<!-- Logo Segment -->
+<div class="container logo">
+	<a class="brandesh pull-right" href="#">Brandesh</a>
+</div>
 <!-- Header Segment -->
 <header id="header" role="banner">
-	<h1>Brandesh</h1>
+	<div class="container">
+		<h1 class="title">Entry Registration Form</h2>
+	</div>
 </header>
 
 <!-- Content Segment -->
 <!-- -->
 <div role="main" class="container" >
-	<h1>Entry Registration</h1>
-	<hr>
+	<h1 class="visuallyhidden">Entry Registration</h1>
 	<a class="logout pull-right" href="#">Lougout</a>
 	<div class="row margin_top_4">
 		<h2 class="visuallyhidden">Registration Form</h2>
@@ -50,43 +55,112 @@
 
 		<!-- content_section -->
 		<section class="span10 content_section">
-			<h1>Account Information</h1>
+			<h1 class="visuallyhidden">Account Information</h1>
 
 			<!-- Tabs -->
 			<ul class="nav nav-tabs">
 			  <li class="active"><a href="#userInfo" data-toggle="tab">User Info</a></li>
 			  <li><a href="#agencyInfo" data-toggle="tab">Agency Info</a></li>
+
 			</ul>
  
 			<div id="" class="tab-content">
-			  <div class="tab-pane active" id="userInfo">
-			  	<h2>User Info</h2>
-			  	<small><i class="icon-asterisk"></i> All Fields in this form should be properly filled with right information</small>
-			  	<hr>
-			  	<form>
-			  		<label>Your full name</label>
-			  		<input type="text" class="input span9" placeholder="Your Full Name">
-			  		<label>Designation in current Company</label>
-			  		<input type="text" class="input span9" placeholder="EX: Account Manager, Marketing Assistant etc...">
-			  		<label>Your Email Addres</label>
-			  		<input type="text" class="input span6" placeholder="Email"> <span class="help-inline">This will be your User ID</span>
-			  		<label>Choose Password</label>
-  					<input type="password" class="input span6" placeholder="Password">
-  					<label>Re-enter Password</label>
-  					<input type="password" class="input span6" placeholder="Re-Enter Password">
-  					<span class="span6"><span class="label label-info">Info</span> A confirmation email will be sent on submit</span>
-  					<hr>
-  					<fieldset>
-  						<button class="btn btn-primary" type="submit">Submit & Continue</button>
-  						<button class="btn" type="reset">Reset!</button>
+			  	<div class="tab-pane active" id="userInfo">
+				  	<h2>User Info</h2>
+				  	<hr>
+				  	<form>
+				  		<fieldset class="control-group">
+					  		<label>Your full name</label>
+					  		<input type="text" class="input span6" id="name" placeholder="Your Full Name">
+					  		<label>Designation in current Company</label>
+					  		<input type="text" class="input span6" id="position" placeholder="EX: Account Manager, Marketing Assistant etc...">
+					  		<label>Your Email Addres</label>
+					  		<input type="text" class="input span5" id="email" placeholder="Email"> <span class="help-inline">This will be your User ID</span>
+					  		<label>Choose Password</label>
+		  					<input type="password" class="input span5" id="password" placeholder="Password">
+		  					<label>Re-enter Password</label>
+		  					<input type="password" class="input span5" id="passwordRepeat" placeholder="Re-Enter Password">
+		  					<span class="span6"><span class="label label-info">Info</span> A confirmation email will be sent on submit</span>
+	  					</fieldset>
+	  					<hr>
+	  					<fieldset>
+	  						<button class="btn btn-primary" type="submit">Submit & Continue</button>
+	  						<button class="btn" type="reset">Reset!</button>
+	  					</fieldset>
+				  	</form>
+			  	</div>
+				<div class="tab-pane" id="agencyInfo">
+				  <h2>Agency Info</h2>
+				  <hr>
+				  <form>
+				  	 <fieldset>
+					    <legend>Agency Details</legend>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyName">Agency Name</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyName" placeholder="Name of Your Agency">
+					        <span class="help-inline">Supporting help text</span>
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyWebsite">Agency Website</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyWebsite" placeholder="http://">
+					        <span class="help-inline">Supporting help text</span>
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyEmail">Agency Email Address</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyEmail" placeholder="Agency Email Address">
+					        <span class="help-inline">Supporting help text</span>
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyPhone">Agency Phone</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyPhone" placeholder="Agency Phone Number">
+					        <span class="help-inline">Supporting help text</span>
+					      </div>
+					    </div>
   					</fieldset>
-			  	</form>
-			  </div>
-			  <div class="tab-pane" id="agencyInfo">
-			  	<h2>Agency Info</h2>
-			  </div>
-			  <div class="tab-pane" id="messages">...</div>
-			  <div class="tab-pane" id="settings">...</div>
+  					<fieldset>
+  						<legend>Address Information</legend>
+  						<div class="control-group">
+					      <label class="control-label" for="agencyStreetAddress">Street Address</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyStreetAddress" placeholder="Enter Road,Street,Block name or number">
+					        <span class="help-inline">ex:House-157,Block-D,Shahid Sayem Road</span>
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyAreaName">Area Name</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyAreaName" placeholder="Area Name">
+					        <span class="help-inline">ex:Bashundhara R/A</span>
+					      </div>
+					    </div>
+					    <div class="control-group">
+					      <label class="control-label" for="agencyCity">Street Address</label>
+					      <div class="controls">
+					        <input type="text" class="input span6" id="agencyCity" placeholder="City Name">
+					        <span class="help-inline">ex:Dhaka</span>
+					      </div>
+					    </div>
+  					</fieldset>
+  					<hr>
+	  				<fieldset>
+	  					<button class="btn btn-primary" type="submit">Submit & Continue</button>
+	  					<button class="btn" type="reset">Reset!</button>
+	  				</fieldset>
+				  </form>
+				  <a class="btn" href="#userInfo" data-target="#userInfo" data-toggle="#tab">Back to User Info</a>
+				  <script>
+  $(function () {
+    $('.tabs a:last').tab('show')
+  })
+</script>
+				</div>
 			</div>
 
 		</section>
@@ -95,7 +169,10 @@
 
 <!-- Footer Segment -->
 <footer class="container footer">
-	<p>This is footer</p>
+	<div class="span8">
+		<span class="livingideas">Living Ideas</span>
+		<span class="adclub">Ad Club</span>
+	</div>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>

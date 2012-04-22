@@ -3,11 +3,32 @@
    ========================================================================== */
 
    /* Global Style */
+   body{ background:#fff200 url("../img/background.png"); }
    .margin_top_4{ margin-top:4em;}
+   h1{ font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size:2.5em; font-weight: 400; }
 
+   /* Google Web Font Loader Classes */
+   .wf-loading h1 { visibility:hidden; }
+   .wf-inactive h1{ visibility:visible;}
+   .wf-active h1 {font-family: 'Bree Serif', serif;}
+
+   /* Sprite */
+
+   .livingideas, .adclub, .digitalmediamarketing, .brandesh
+{ display: block; background: url('../img/DMSpritev2.png') no-repeat; text-indent:-9999px; }
+
+.livingideas { background-position: -0px -0px; width: 191px; height: 114px; }
+.adclub { background-position: -0px -114px; width: 53px; height: 66px; }
+.digitalmediamarketing { background-position: -53px -114px; width: 133px; height: 54px; }
+.brandesh { background-position: -0px -180px; width: 217px; height: 52px; }
+
+      
+
+   /* Logo Segment */
+   .logo{ margin-top:1em;margin-bottom:2em; }
    /* Header Segment */
-   #header{ height:90px; }
-   #header h1{ text-align:center; }
+   #header{ background:#000; border-bottom:1px solid #EEE; }
+   #header .title{ color: #FFF200; padding:3em 1em; display: block; }
 
    /* Content Segment */
 
@@ -19,7 +40,10 @@
     nav.sidenav ul li{  }
 
     /* -------- Content Section --------- */
-    .content_section{}
+    .content_section{ }
+    .content_section .nav{ padding-top:0em; padding-left:2em; padding-right:2em; }
+    .content_section .nav-tab{ border-width:90%; }
+    .content_section .tab-content{ padding:0em 1em; }
 
   /* Footer Segment */
   .footer{ margin-top:3em; margin-bottom:1em; }
