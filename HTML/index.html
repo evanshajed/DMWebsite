@@ -21,44 +21,83 @@
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
+<!-- Logo Segment -->
+<div class="container logo">
+	<a class="brandesh pull-right" href="#">Brandesh</a>
+</div>
 <!-- Header Segment -->
 <header id="header" role="banner">
-	<h1>Brandesh</h1>
-</header>
-
-<!-- Content Segment -->
-<!-- -->
-<div role="main" class="container" >
-	<h1>Entry Registration</h1>
-	<hr>
-	<a class="logout pull-right" href="#">Lougout</a>
-	<div class="row margin_top_4">
-		<h2 class="visuallyhidden">Registration Form</h2>
-
-		<!-- Aside -->
-		<aside class="span2" role="contemporary">
-			<h1 class="visuallyhidden">User Sidebar</h1>
-			<nav class="sidenav">
-				<h1 class="visuallyhidden">User Control</h1>
-				<ul>
-					<li><i class="icon-question-sign"></i> <a href="#">Entry Help</a></li>
-					<li><i class="icon-info-sign"></i> <a href="#">Contest Guide</a></li>
-					<li><i class="icon-calendar"></i> <a href="#">Schedule</a></li>
-				</ul>
-			</nav>
-		</aside>
-
-		<!-- content_section -->
-		<section class="span10 content_section">
-			<h1>Main Content Area</h1>
+	<div class="container">
+		<h1 class="span6 title">Write something on this section. Please try to keep the line numbers upto three. Not more than that!</h1>
+		<section id="homeSelection" class="span4 margin_top_4">
+			<h2>Give a small heading here</h2>
+			<form class="form-inline">
+				<fieldset>
+					<legend>Select your entry type!</legend>
+					<div class="control-group">
+						<div class="controls">
+							<select id="regSelection">
+								<option>Option 1</option>
+								<option>Delegates</option>
+								<option>Students</option>
+								<option>Brand</option>
+							</select>
+							<button type="submit" class="btn btn-primary">Go</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<h4>
+				Already a member? <a data-toggle="collapse" href="#entryLogin">Log In!</a>
+			</h4>
+			<div id="entryLogin" class="collapse margin_top_1">
+				<form class="form-inline">
+    	<input type="text" class="input-small" placeholder="Email">
+  		<input type="password" class="input-small" placeholder="Password">
+  		<button type="submit" class="btn">Sign in</button>
+    </form>
+			</div>
 		</section>
+
 	</div>
-</div>
+</header>
 
 <!-- Footer Segment -->
 <footer class="container footer">
-	<p>This is footer</p>
+	<div class="row">
+		<div class="span9">
+			<span class="living_ideas span4">Living Ideas</span>
+			<span class="ad_club span2">Ad Club</span>
+			<span class="digital_media_marketing span2">Digital Media marketing</span>
+		</div>
+		<div class="span3">
+			<p class="credit">
+				Crafted by: <a href="http://twitter.com/evanshajed" title="Shajed Evan">Shajed Evan.</a> <br>
+				Developed by: <a href="http://twitter.com/we4tech" title="NHM Tanveer">NHM Tanveer.</a>
+			</p>
+		</div>
+	</div>
 </footer>
+
+<!--
+<div class="modal hide fade in" id="entryLogin">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Login</h3>
+  </div>
+  <div class="modal-body">
+    <form class="form-inline">
+    	<input type="text" class="input-small" placeholder="Email">
+  		<input type="password" class="input-small" placeholder="Password">
+  		<button type="submit" class="btn">Sign in</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn btn-primary">Download Help File</a>
+  </div>
+</div>
+-->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
