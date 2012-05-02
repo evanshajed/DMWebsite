@@ -14,14 +14,14 @@
    .wf-active h1 {font-family: 'Bree Serif', serif;}
 
    /* Sprite */
+.adfest, .livingideas, .adclub, .digitalmediamarketing, .brandesh
+{ display: block; background: url('../img/DMSpritev3.png') no-repeat; text-indent:-9999px; }
 
-   .living_ideas, .ad_club, .digital_media_marketing, .brandesh
-{ display: block; background: url('../img/DMSpritev2.png') no-repeat; text-indent:-9999px; }
-
-.living_ideas { background-position: -0px -0px; width: 295px; height: 177px; }
-.ad_club { background-position: -0px -177px; width: 98px; height: 127px; margin-top:30px; }
-.digital_media_marketing { background-position: -98px -177px; width: 176px; height: 59px; margin-top:45px; }
-.brandesh { background-position: -0px -304px; width: 217px; height: 53px; }
+.adfest { background-position: -0px -0px; width: 134px; height: 133px; }
+.livingideas { background-position: -0px -133px; width: 166px; height: 131px; }
+.adclub { background-position: -0px -264px; width: 88px; height: 114px; }
+.digitalmediamarketing { background-position: -0px -378px; width: 176px; height: 59px; }
+.brandesh { background-position: -0px -437px; width: 217px; height: 53px; }
 
       
 
